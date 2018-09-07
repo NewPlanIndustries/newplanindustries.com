@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NEW PLAN INDUSTRIES</title>
+    <link rel="stylesheet" type="text/css" href="normalize.min.css">
+    <style>
+        body {
+            font-family: serif;
+            background:#000 url(galaxy.png) top center;
+            color:#0F0;
+            text-shadow: 2px 2px 0 #F00;
+            text-align: center;
+            margin: 1em;
+        }
+
+        h1, h2, h3, h4, h5, p {
+            margin: 0;
+            margin-bottom: .5em;
+        }
+
+        .fireworks {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: url(fireworks.jpg) top center;
+            opacity: .25;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="fireworks"></div>
+
+<h1>New Plan Industries</h1>
+<p><img src="construction.gif"></p>
+<h2>We're working on it!</h2>
+<h3><blink>Coming June 2001</blink></h3>
+<p><img src="earthtowns.png"></p>
+
+
+
+<script type="text/javascript" src="jquery.min.js"></script>
+<script>
+var documentTitle = document.title + " - ";
+
+setInterval(function(){
+    document.title = documentTitle = documentTitle.substring(1) + documentTitle.substring(0,1);
+}, 200);
+
+setInterval(function(){
+    $('blink').toggle();
+}, 500);
+</script>
+
+</body>
+</html>
